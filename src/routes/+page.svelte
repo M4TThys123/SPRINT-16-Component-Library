@@ -7,7 +7,7 @@
 <main>
   <div class="container">
     <h1>CMD Minor</h1>
-    <pre>{JSON.stringify(data, null, 2)}</pre>
+<!--    <pre>{JSON.stringify(data, null, 2)}</pre>-->
   </div>
 </main>
 

@@ -17,6 +17,12 @@
   font-family: Open sans;
 }
 
+.body__Wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 /* ALGEMENE STYLING */
 ul {
   list-style: none;
