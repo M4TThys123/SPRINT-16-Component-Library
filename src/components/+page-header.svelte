@@ -43,4 +43,7 @@
   section{
     margin-bottom: .5em;
   }
+  .hero__img{
+    width: auto !important;
+  }
 </style>
