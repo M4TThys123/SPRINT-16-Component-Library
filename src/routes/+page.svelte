@@ -1,7 +1,5 @@
 <script>
-  // import * as prismicH from "@prismicio/helpers";
   export let data;
-  // console.log(data);
 </script>
 
 <main>
@@ -9,6 +7,7 @@
     <h1>CMD Minor</h1>
     <pre>{JSON.stringify(data, null, 2)}</pre>
   </div>
+
 </main>
 
 <style>
