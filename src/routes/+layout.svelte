@@ -1,6 +1,9 @@
 <script>
+  import { Footer } from "cmd-midterm-components";
   import { page } from "$app/stores";
   import PageHeader from "../components/+page-header.svelte";
+  // import FooterList03 from "../components/building block/FooterList03.svelte";
+  import FooterList from "../components/building block/FooterList.svelte";
 
   let navOpen = false;
 
@@ -190,7 +193,7 @@
   }
 </script>
 
-<div class="flex">
+<div class="layout-wrapper">
   <nav class="sidenav" class:open={navOpen}>
     <button class="closebtn" on:click={handleNav}>&times;</button>
 
@@ -265,10 +268,19 @@
     </header>
     <PageHeader />
     <slot/>
+
+<!--    <FooterList03></FooterList03>-->
+    <FooterList></FooterList>
+
+    <Footer ></Footer>
   </main>
 </div>
 
 <style>
+  .layout-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
   /* Hamburger Menu icon */
   .hamButton {
     position: absolute;
@@ -297,7 +309,7 @@
     max-width: 400px;
     width: 100%;
 
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
